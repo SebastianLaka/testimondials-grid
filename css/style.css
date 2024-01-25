@@ -1,0 +1,30 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media (min-width: 280px) {
+  p {
+    color: green;
+    background-color: orange;
+  }
+}
+@media (min-width: 992px) {
+  p {
+    color: yellow;
+    background-color: blue;
+  }
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: red;
+  font-size: 10px;
+  font-weight: 500;
+}/*# sourceMappingURL=style.css.map */

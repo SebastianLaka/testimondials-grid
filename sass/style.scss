@@ -1,0 +1,15 @@
+@use './reset' as *;
+@use './colors' as *;
+@use './font' as *;
+
+@use './mobile' as *;
+@use './desktop' as *;
+html{
+    font-size: 62.5%;
+}
+body {
+  background-color: red;
+  font-size: 10px;
+  font-weight: $primary-weight;
+}
+

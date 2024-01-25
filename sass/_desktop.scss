@@ -1,0 +1,10 @@
+@use './reset' as *;
+@use './colors' as *;
+@use './font' as *;
+
+@media (min-width: 992px){
+    p{
+        color: yellow;
+        background-color: blue;
+    }
+}
