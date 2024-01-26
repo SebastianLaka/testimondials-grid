@@ -3,8 +3,11 @@
 @use './font' as *;
 
 @media (min-width: 992px){
-    p{
-        color: yellow;
-        background-color: blue;
+    .main-container{
+        background-color: orange;
+        p{
+            color: yellow;
+            background-color: blue;
+        }
     }
 }

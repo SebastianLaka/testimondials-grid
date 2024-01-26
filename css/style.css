@@ -8,13 +8,61 @@
 }
 
 @media (min-width: 280px) {
-  p {
-    color: green;
-    background-color: orange;
+  .main-container {
+    height: 100svh;
+    margin: 7.5em 2em;
+  }
+  .main-container .box {
+    padding: 1.75em 2.5em;
+    border-radius: 0.8em;
+    background-color: hsl(263, 55%, 52%);
+  }
+  .main-container .box .box-person {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .main-container .box .box-person__avatar {
+    border-radius: 50%;
+    border: 2px solid hsl(0, 0%, 81%);
+  }
+  .main-container .box .box-person .person-about {
+    margin-left: 1em;
+  }
+  .main-container .box .box-person .person-about__name {
+    margin-bottom: 0.5em;
+    font-weight: 600;
+    font-size: 1.3rem;
+    color: hsl(0, 0%, 81%);
+  }
+  .main-container .box .box-person .person-about__status {
+    color: hsl(210, 46%, 95%);
+    opacity: 50%;
+  }
+  .main-container .box .box-person-description {
+    margin-top: 2.5em;
+  }
+  .main-container .box .box-person-description__header {
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 1em;
+    line-height: 125%;
+  }
+  .main-container .box .box-person-description__about {
+    color: hsl(0, 0%, 81%);
+    opacity: 70%;
+    line-height: 150%;
+    font-size: 1.3rem;
+    padding-right: 2em;
   }
 }
 @media (min-width: 992px) {
-  p {
+  .main-container {
+    background-color: orange;
+  }
+  .main-container p {
     color: yellow;
     background-color: blue;
   }
@@ -24,7 +72,7 @@ html {
 }
 
 body {
-  background-color: red;
   font-size: 10px;
   font-weight: 500;
+  font-family: "Barlow-Semi-Condensed", sans-serif;
 }/*# sourceMappingURL=style.css.map */

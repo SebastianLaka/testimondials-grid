@@ -1,6 +1,50 @@
-@media (min-width: 280px){
-    p{
-        color: green;
-        background-color: orange;
+@use "./reset" as *;
+@use "./colors" as *;
+@use "./font" as *;
+@media (min-width: 280px) {
+  .main-container {
+    height: 100svh;
+    margin: 7.5em 2em;
+    .box {
+      padding: 1.75em 2.5em;
+      border-radius: 0.8em;
+      background-color: $Moderate-violet;
+      .box-person{
+        display: flex;
+        align-items: center;
+        &__avatar{
+          border-radius: 50%;
+          border: 2px solid $Light-gray;
+        }
+        .person-about{
+          margin-left: 1em;
+          &__name{
+            margin-bottom: .5em;
+            font-weight: $secondary-weight;
+            font-size: $primary-size;
+            color: $Light-gray;
+          }
+          &__status{
+            color: $Light-grayish;
+            opacity: 50%;
+          }
+        }
+      }
+      .box-person-description{
+        margin-top: 2.5em;
+        &__header{
+          color: $primary-white;
+          margin-bottom: 1em;
+          line-height: 125%;
+        }
+        &__about{
+          color: $Light-gray;
+          opacity: 70%;
+          line-height: 150%;
+          font-size: $primary-size;
+          padding-right: 2em;
+        }
+      }
     }
+  }
 }
