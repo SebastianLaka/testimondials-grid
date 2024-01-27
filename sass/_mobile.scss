@@ -3,12 +3,11 @@
 @use "./font" as *;
 @media (min-width: 280px) {
   .main-container {
-    height: 100svh;
-    margin: 7.5em 2em;
-    
-    .box-dc, .box-jw {
+    height: 100%;
+    padding: 5em 2em;
+    .box-dc, .box-jw, .box-jh, .box-pa, .box-kw {
       padding: 1.75em 2.5em;
-      margin-bottom: 3em;
+      margin: 3em 0;
       border-radius: 0.8em;
       background-color: $Moderate-violet;
       position: relative;
@@ -62,5 +61,34 @@
     .box-jw{
       background-color: $Very-dark-grayish;
     }
+    .box-jh, .box-kw{
+      background-color: $primary-white;
+      .box-person{
+        .person-about{
+          margin-left: 1.75em;
+          &__name{
+            color: $Very-dark-blackish;
+          }
+          &__status{
+            color: $Very-dark-grayish;
+            opacity: 50%;
+          }
+        }
+      }
+      .box-description{
+        margin-top: 2.5em;
+        &__header{
+          color: $Very-dark-blackish;
+          
+        }
+        &__about{
+          color: $Very-dark-blackish;
+        }
+      }
+    }
+    .box-pa{
+      background-color: $Very-dark-blackish;
+    }
+    
   }
 }
