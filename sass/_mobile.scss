@@ -9,15 +9,25 @@
       padding: 1.75em 2.5em;
       border-radius: 0.8em;
       background-color: $Moderate-violet;
+      position: relative;
+      z-index: 0;
+      &__quota{
+        position: absolute;
+        top: 0;
+        right: 7%;
+        z-index: -1;
+      }
       .box-person{
         display: flex;
         align-items: center;
         &__avatar{
           border-radius: 50%;
           border: 2px solid $Light-gray;
+          width: 3.5em;
+          height: 3.5em;
         }
         .person-about{
-          margin-left: 1em;
+          margin-left: 1.75em;
           &__name{
             margin-bottom: .5em;
             font-weight: $secondary-weight;
@@ -30,12 +40,13 @@
           }
         }
       }
-      .box-person-description{
+      .box-description{
         margin-top: 2.5em;
         &__header{
           color: $primary-white;
           margin-bottom: 1em;
           line-height: 125%;
+          font-size: 2.2rem;
         }
         &__about{
           color: $Light-gray;
