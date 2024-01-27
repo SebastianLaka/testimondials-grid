@@ -74,6 +74,8 @@
   }
   .main-container .box-jh, .main-container .box-kw {
     background-color: hsl(0, 0%, 100%);
+    -webkit-box-shadow: 0.1em 0.7em 1.5em hsl(219, 29%, 14%);
+            box-shadow: 0.1em 0.7em 1.5em hsl(219, 29%, 14%);
   }
   .main-container .box-jh .box-person .person-about, .main-container .box-kw .box-person .person-about {
     margin-left: 1.75em;

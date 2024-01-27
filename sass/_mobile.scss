@@ -63,6 +63,7 @@
     }
     .box-jh, .box-kw{
       background-color: $primary-white;
+      box-shadow: .1em .7em 1.5em $Very-dark-blackish;
       .box-person{
         .person-about{
           margin-left: 1.75em;
@@ -89,6 +90,5 @@
     .box-pa{
       background-color: $Very-dark-blackish;
     }
-    
   }
 }
